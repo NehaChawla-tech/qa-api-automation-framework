@@ -1,0 +1,12 @@
+{
+  "name": "qa-api-automation-framework",
+  "version": "1.0.0",
+  "description": "API automation framework using Postman and Newman",
+  "scripts": {
+    "test": "newman run collections/reqres_collection.json -e environments/qa_environment.json -r cli,html --reporter-html-export reports/report.html"
+  },
+  "devDependencies": {
+    "newman": "^6.1.1",
+    "newman-reporter-html": "^1.0.5"
+  }
+}
